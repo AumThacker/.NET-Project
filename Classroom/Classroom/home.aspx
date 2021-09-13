@@ -6,10 +6,16 @@
 <head runat="server">
     <title></title>
 </head>
+    
 <body>
     <form id="form1" runat="server">
-        <div>
-            Home works.</div>
+        
+        <asp:Button ID="create_class" runat="server"  PostBackUrl="~/CreateClass.aspx" Text="Create Class" />
+        
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="join_class" runat="server" PostBackUrl="~/JoinClass.aspx" Text="Join Class" />
+        
     </form>
+
 </body>
 </html>

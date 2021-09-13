@@ -24,6 +24,15 @@ namespace Classroom
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
         /// email control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace Classroom
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator email_required;
+
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
         /// password control.
@@ -60,13 +78,13 @@ namespace Classroom
         protected global::System.Web.UI.WebControls.RequiredFieldValidator password_required;
 
         /// <summary>
-        /// password_validator control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator password_validator;
+        protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
         /// conf_password control.
@@ -87,13 +105,13 @@ namespace Classroom
         protected global::System.Web.UI.WebControls.RequiredFieldValidator conf_pass_required;
 
         /// <summary>
-        /// conf_password_validator control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator conf_password_validator;
+        protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
         /// fname control.
@@ -114,6 +132,15 @@ namespace Classroom
         protected global::System.Web.UI.WebControls.RequiredFieldValidator fname_required;
 
         /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
         /// lname control.
         /// </summary>
         /// <remarks>
@@ -132,21 +159,30 @@ namespace Classroom
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lname_required;
 
         /// <summary>
-        /// submit control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// msg control.
+        /// conf_password_validator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label msg;
+        protected global::System.Web.UI.WebControls.CompareValidator conf_password_validator;
+
+        /// <summary>
+        /// password_validator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator password_validator;
     }
 }

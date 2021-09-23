@@ -97,12 +97,18 @@
     <Content Include="Home\JoinClass.aspx" />
     <Content Include="Accounts\Login.aspx" />
     <Content Include="Accounts\Registration.aspx" />
+    <Content Include="ManageClasses\AddMaterial.aspx" />
+    <Content Include="ManageClasses\People.aspx" />
+    <Content Include="ManageClasses\Stream.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Shared\Student-nav.aspx" />
+    <Content Include="Shared\Home-nav.aspx" />
+    <Content Include="Shared\Teacher-nav.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,8 +142,43 @@
     <Compile Include="Accounts\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageClasses\AddMaterial.aspx.cs">
+      <DependentUpon>AddMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageClasses\AddMaterial.aspx.designer.cs">
+      <DependentUpon>AddMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageClasses\People.aspx.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageClasses\People.aspx.designer.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageClasses\Stream.aspx.cs">
+      <DependentUpon>Stream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageClasses\Stream.aspx.designer.cs">
+      <DependentUpon>Stream.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109170824283_InitialCreate.cs" />
+    <Compile Include="Migrations\202109170824283_InitialCreate.Designer.cs">
+      <DependentUpon>202109170824283_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109221612094_InitialCreate1.cs" />
+    <Compile Include="Migrations\202109221612094_InitialCreate1.Designer.cs">
+      <DependentUpon>202109221612094_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109230903219_InitialCreate11.cs" />
+    <Compile Include="Migrations\202109230903219_InitialCreate11.Designer.cs">
+      <DependentUpon>202109230903219_InitialCreate11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\ClassroomModel.cs" />
+    <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\User.cs" />
@@ -148,6 +189,27 @@
     </Compile>
     <Compile Include="Accounts\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Student-nav.aspx.cs">
+      <DependentUpon>Student-nav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Student-nav.aspx.designer.cs">
+      <DependentUpon>Student-nav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Home-nav.aspx.cs">
+      <DependentUpon>Home-nav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Home-nav.aspx.designer.cs">
+      <DependentUpon>Home-nav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Teacher-nav.aspx.cs">
+      <DependentUpon>Teacher-nav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Teacher-nav.aspx.designer.cs">
+      <DependentUpon>Teacher-nav.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +245,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109170824283_InitialCreate.resx">
+      <DependentUpon>202109170824283_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109221612094_InitialCreate1.resx">
+      <DependentUpon>202109221612094_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109230903219_InitialCreate11.resx">
+      <DependentUpon>202109230903219_InitialCreate11.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -9,6 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
+            <!-- #include file="../Shared/Home-nav.aspx" -->
+        </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Class Name</label>
             <asp:TextBox ID="class_name" runat="server" Text="" class="form-control" Width="315px"></asp:TextBox>

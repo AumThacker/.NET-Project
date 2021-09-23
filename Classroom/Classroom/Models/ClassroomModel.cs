@@ -15,6 +15,7 @@ namespace Classroom.Models
         public ClassroomModel()
             : base("name=ClassroomModel")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ClassroomModel, Classroom.Migrations.Configuration>());
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
@@ -25,6 +26,12 @@ namespace Classroom.Models
         public DbSet<Class> Classes { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Material> Materials { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+
+        }
 
     }
 

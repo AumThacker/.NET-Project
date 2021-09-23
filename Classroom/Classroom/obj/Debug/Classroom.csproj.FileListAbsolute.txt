@@ -187,3 +187,7 @@ D:\Project & Lab submission\Sem 5\1_WDDN\.Net Framework Project\Classroom\Classr
 D:\Project & Lab submission\Sem 5\1_WDDN\.Net Framework Project\Classroom\Classroom\obj\Debug\Classroom.csproj.CopyComplete
 D:\Project & Lab submission\Sem 5\1_WDDN\.Net Framework Project\Classroom\Classroom\obj\Debug\Classroom.dll
 D:\Project & Lab submission\Sem 5\1_WDDN\.Net Framework Project\Classroom\Classroom\obj\Debug\Classroom.pdb
+D:\LabSubmission\SEM5\WDDN\WDDN Project\Classroom\Classroom\obj\Debug\Classroom.Migrations.InitialCreate.resources
+D:\LabSubmission\SEM5\WDDN\WDDN Project\Classroom\Classroom\obj\Debug\Classroom.csproj.GenerateResource.cache
+D:\LabSubmission\SEM5\WDDN\WDDN Project\Classroom\Classroom\obj\Debug\Classroom.Migrations.InitialCreate1.resources
+D:\LabSubmission\SEM5\WDDN\WDDN Project\Classroom\Classroom\obj\Debug\Classroom.Migrations.InitialCreate11.resources

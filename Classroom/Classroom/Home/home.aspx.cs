@@ -12,6 +12,7 @@ namespace Classroom
     {
         public string ClassName { get; set; }
         public string SubjectName { get; set; }
+        public int ClassCode { get; set; }
     }
     public partial class home : System.Web.UI.Page
     {
@@ -32,7 +33,7 @@ namespace Classroom
                 array_len += students.Count();
                 classes = new Classes[array_len];
                 len = 0;
-                if(teachers != null)
+                if (teachers != null)
                 {
                     foreach(var t in teachers)
                     {
@@ -40,6 +41,7 @@ namespace Classroom
                         classes[len] = new Classes();
                         classes[len].ClassName = cls.ClassName;
                         classes[len].SubjectName = cls.SubName;
+                        classes[len].ClassCode = cls.ClassCode;
                         len++;
                     }
                 }
@@ -51,6 +53,7 @@ namespace Classroom
                         classes[len] = new Classes();
                         classes[len].ClassName = cls.ClassName;
                         classes[len].SubjectName = cls.SubName;
+                        classes[len].ClassCode = cls.ClassCode;
                         len++;
                     }
                 }

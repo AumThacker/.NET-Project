@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -49,13 +50,21 @@ namespace Classroom.ManageClasses
                         material.DocName = filename;
                         material.DocType = type;
                         material.Document = bytes;
+                        material.UploadTime = DateTime.Now.Date;
                         if (is_assignment.Checked)
+                        {
                             material.IsAssignment = true;
+                            if (deadline_time.Value != "")
+                            {
+                                material.Deadline = DateTime.Parse(deadline_time.Value);
+                            }
+                            
+                        }
                         else
                             material.IsAssignment = false;
                         model.Materials.Add(material);
                         model.SaveChanges();
-                        Response.Redirect("~/Stream.aspx");
+                        Response.Redirect("~/ManageClasses/Stream.aspx");
                     }
                 }
             }

@@ -30,8 +30,7 @@ namespace Classroom.ManageClasses
                 string email = Session["current_user"].ToString();
                 Teacher teacher = model.Teachers.Where(t => t.ClassCode == cls_code && t.Email == email).FirstOrDefault<Teacher>();
                 if (teacher != null)
-                {
-                    teacher_name = teacher.FName + " " + teacher.LName;
+                { 
                     Session["isTeacher"] = true;
                     Session["isStudent"] = false;
                 }
@@ -47,7 +46,9 @@ namespace Classroom.ManageClasses
                 material_id_list = new List<int>();
                 is_assignment_list = new List<bool>();
                 int cls_code = int.Parse(Session["class_code"].ToString());
-                var materials = model.Materials.Where(m => m.ClassCode == cls_code).ToList<Material>();
+                Teacher teacher = model.Teachers.Where(t => t.ClassCode == cls_code).FirstOrDefault<Teacher>();
+                teacher_name = teacher.FName + " " + teacher.LName;
+                var materials = model.Materials.Where(m => m.ClassCode == cls_code).OrderByDescending(m=>m.UploadTime).ToList<Material>();
                 foreach (Material material in materials)
                 {
                     material_id_list.Add(material.MaterialId);

@@ -100,6 +100,7 @@
     <Content Include="ManageClasses\AddMaterial.aspx" />
     <Content Include="ManageClasses\People.aspx" />
     <Content Include="ManageClasses\Stream.aspx" />
+    <Content Include="ManageClasses\ViewMaterial.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -163,6 +164,13 @@
     <Compile Include="ManageClasses\Stream.aspx.designer.cs">
       <DependentUpon>Stream.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageClasses\ViewMaterial.aspx.cs">
+      <DependentUpon>ViewMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageClasses\ViewMaterial.aspx.designer.cs">
+      <DependentUpon>ViewMaterial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202109170824283_InitialCreate.cs" />
     <Compile Include="Migrations\202109170824283_InitialCreate.Designer.cs">
       <DependentUpon>202109170824283_InitialCreate.cs</DependentUpon>
@@ -174,6 +182,14 @@
     <Compile Include="Migrations\202109230903219_InitialCreate11.cs" />
     <Compile Include="Migrations\202109230903219_InitialCreate11.Designer.cs">
       <DependentUpon>202109230903219_InitialCreate11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109241005413_InitialCreate111.cs" />
+    <Compile Include="Migrations\202109241005413_InitialCreate111.Designer.cs">
+      <DependentUpon>202109241005413_InitialCreate111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109251010078_InitialCreate1111.cs" />
+    <Compile Include="Migrations\202109251010078_InitialCreate1111.Designer.cs">
+      <DependentUpon>202109251010078_InitialCreate1111.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
@@ -255,6 +271,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109230903219_InitialCreate11.resx">
       <DependentUpon>202109230903219_InitialCreate11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109241005413_InitialCreate111.resx">
+      <DependentUpon>202109241005413_InitialCreate111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109251010078_InitialCreate1111.resx">
+      <DependentUpon>202109251010078_InitialCreate1111.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

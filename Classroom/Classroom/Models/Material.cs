@@ -13,11 +13,17 @@ namespace Classroom.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaterialId { get; set; }
         public int ClassCode { get; set; }
+        public string Title { get; set; }
         public string Desc { get; set; }
         public string DocName { get; set; }
         public string DocType { get; set; }
         public byte[] Document { get; set; }
-        public bool IsAssignment { get; set; }
-        public string Title { get; set; }
+        public bool IsAssignment { get; set; } 
+        [Column(TypeName ="Date")]
+        [DataType(DataType.Date)]
+        public DateTime? UploadTime { get; set; }
+        [Column(TypeName = "Date")]
+        [DataType(DataType.Date)]
+        public DateTime? Deadline { get; set; }
     }
 }

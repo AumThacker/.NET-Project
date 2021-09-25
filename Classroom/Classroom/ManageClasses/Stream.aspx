@@ -40,7 +40,7 @@
            {
            %>
                 
-           <a href="People.aspx" style="text-decoration: none; color: black">
+           <a href="ViewMaterial.aspx?Id=<%=material_id_list[m] %>" style="text-decoration: none; color: black">
                <div class="panel">
                    <div class="panel-heading">
                        <% if (is_assignment_list[m])
